@@ -1,6 +1,8 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/vbnbTt5m)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15268770&assignment_repo_type=AssignmentRepo)
+
 # Dev_Setup
+
 Setup Development Environment
 
 #Assignment: Setting Up Your Developer Environment
@@ -8,47 +10,143 @@ Setup Development Environment
 #Objective:
 This assignment aims to familiarize you with the tools and configurations necessary to set up an efficient developer environment for software engineering projects. Completing this assignment will give you the skills required to set up a robust and productive workspace conducive to coding, debugging, version control, and collaboration.
 
-#Tasks:
+Answers
 
-1. Select Your Operating System (OS):
-   Choose an operating system that best suits your preferences and project requirements. Download and Install Windows 11. https://www.microsoft.com/software-download/windows11
+## Developer Environment Setup Documentation for macOS
 
-2. Install a Text Editor or Integrated Development Environment (IDE):
-   Select and install a text editor or IDE suitable for your programming languages and workflow. Download and Install Visual Studio Code. https://code.visualstudio.com/Download
-3. Set Up Version Control System:
-   Install Git and configure it on your local machine. Create a GitHub account for hosting your repositories. Initialize a Git repository for your project and make your first commit. https://github.com
+### 1. Operating System: macOS
 
-4. Install Necessary Programming Languages and Runtimes:
-  Instal Python from http://wwww.python.org programming language required for your project and install their respective compilers, interpreters, or runtimes. Ensure you have the necessary tools to build and execute your code.
+### 2. Text Editor/IDE: Visual Studio Code
 
-5. Install Package Managers:
-   If applicable, install package managers like pip (Python).
+**Step 1: Download Visual Studio Code**
 
-6. Configure a Database (MySQL):
-   Download and install MySQL database. https://dev.mysql.com/downloads/windows/installer/5.7.html
+- Visit the [Visual Studio Code download page](https://code.visualstudio.com/Download).
+- Download the macOS version of Visual Studio Code.
 
-7. Set Up Development Environments and Virtualization (Optional):
-   Consider using virtualization tools like Docker or virtual machines to isolate project dependencies and ensure consistent environments across different machines.
+Step 2: Install Visual Studio Code
 
-8. Explore Extensions and Plugins:
-   Explore available extensions, plugins, and add-ons for your chosen text editor or IDE to enhance functionality, such as syntax highlighting, linting, code formatting, and version control integration.
+- Open the downloaded `.zip` file and move `Visual Studio Code.app` to the `Applications` folder.
+- Launch Visual Studio Code from the `Applications` folder.
 
-9. Document Your Setup:
-    Create a comprehensive document outlining the steps you've taken to set up your developer environment. Include any configurations, customizations, or troubleshooting steps encountered during the process. 
+### 3. Version Control System: Git and GitHub
 
-#Deliverables:
-- Document detailing the setup process with step-by-step instructions and screenshots where necessary.
-- A GitHub repository containing a sample project initialized with Git and any necessary configuration files (e.g., .gitignore).
-- A reflection on the challenges faced during setup and strategies employed to overcome them.
+**Step 1: Install Git**
 
-#Submission:
-Submit your document and GitHub repository link through the designated platform or email to the instructor by the specified deadline.
+- Open Terminal and install Git using Homebrew:
+  ```bash
+  brew install git
+  ```
 
-#Evaluation Criteria:**
-- Completeness and accuracy of setup documentation.
-- Effectiveness of version control implementation.
-- Appropriateness of tools selected for the project requirements.
-- Clarity of reflection on challenges and solutions encountered.
-- Adherence to submission guidelines and deadlines.
+**Step 2: Configure Git**
 
-Note: Feel free to reach out for clarification or assistance with any aspect of the assignment.
+- Open Terminal and configure your username and email:
+  ```bash
+  git config --global user.name "Your Name"
+  git config --global user.email "your.email@example.com"
+  ```
+
+**Step 3: Create a GitHub Account**
+
+- Visit [GitHub](https://github.com) and sign up for a free account.
+- Follow the instructions to verify your email and complete the account setup.
+
+**Step 4: Initialize a Git Repository**
+
+- Create a new project folder on your local machine.
+- Open Terminal in the project folder and initialize a Git repository:
+  ```bash
+  git init
+  ```
+
+**Step 5: Make Your First Commit**
+
+- Create a new file (e.g., `README.md`) in the project folder.
+- Stage and commit the file:
+  ```bash
+  git add README.md
+  git commit -m "Initial commit"
+  ```
+
+**Step 6: Push to GitHub**
+
+- Create a new repository on GitHub.
+- Link the local repository to the remote repository:
+  ```bash
+  git remote add origin https://github.com/your-username/your-repository.git
+  git push -u origin master
+  ```
+
+### 4. Install Necessary Programming Languages and Runtimes
+
+**Step 1: Install Python**
+
+- Visit the [Python download page](https://www.python.org/downloads/).
+- Download the latest version for macOS and run the installer.
+- Ensure to check the box "Add Python to PATH" during installation.
+- Verify the installation by running:
+  ```bash
+  python3 --version
+  ```
+
+### 5. Install Package Managers
+
+**Step 1: Install pip (Python)**
+
+- Pip is included with Python, but you can upgrade it by running:
+  ```bash
+  python3 -m pip install --upgrade pip
+  ```
+
+### 6. Configure a Database: MySQL
+
+**Step 1: Download MySQL**
+
+- Visit the [MySQL download page](https://dev.mysql.com/downloads/installer/).
+- Download the macOS DMG archive and run the installer.
+
+**Step 2: Install MySQL**
+
+- Follow the installation wizard to install MySQL Server.
+- Configure MySQL Server during installation, setting up a root password and other options as needed.
+- Start the MySQL server from the MySQL preference pane in System Preferences.
+
+### 8. Explore Extensions and Plugins for Visual Studio Code
+
+**Step 1: Install Extensions**
+
+- Open Visual Studio Code.
+- Go to the Extensions view by clicking on the Extensions icon in the Activity Bar.
+- Search for and install extensions such as:
+  - Python
+  - GitLens
+  - Prettier - Code formatter
+  - ESLint
+
+### 9. Document Your Setup
+
+**Documentation Steps**
+
+- Write a detailed document outlining each step above.
+- Include screenshots where necessary to illustrate the process.
+- Save the document as `Developer_Environment_Setup_Documentation.md`.
+
+### GitHub Repository
+
+- Create a GitHub repository named `DeveloperEnvironmentSetup`.
+- Add the `Developer_Environment_Setup_Documentation.md` to the repository.
+- Commit and push the document to the repository.
+
+### Reflection on Challenges and Strategies
+
+**Challenges Faced:**
+
+1. **Installation Issues**: Encountered problems during MySQL installation due to permission issues.
+
+   - **Solution**: Granted necessary permissions in System Preferences under Security & Privacy settings.
+
+2. **Git Configuration**: Initial confusion with configuring Git username and email.
+
+   - **Solution**: Referenced Git documentation for step-by-step instructions.
+
+3. **Python Path Issues**: Python was not recognized in the command line.
+   - **Solution**: Added Python to PATH manually in the `.zshrc` file.
